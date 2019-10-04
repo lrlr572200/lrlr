@@ -1,0 +1,67 @@
+			#div1{
+				margin-top: 0px;
+				
+				border-bottom: 1px solid #999999;
+			}
+			.s1{
+				font-size: 13px;
+				color: #73ABC9;
+				text-decoration: none;
+				font-weight: 100;
+			}
+			#me{
+				position: absolute;
+				top: 8px;
+				right: 252px;
+			}
+			#s1{
+				font-size: 13px;
+				color: #999999;
+			}
+			#div2{
+				margin-left: 150px;
+				margin-top: 70px;
+				position: relative;
+				
+			}
+			#div3{
+				border-bottom: 3px solid #FF4400;
+				width: 900px;
+				background-color: #EFEFEF;
+			}
+			#div4{
+				margin-top: 50px;
+				height: 400px;
+				margin-left: 150px;
+				
+				border-bottom: 3px solid #FF4400;
+				width: 900px;
+				
+			}
+			#buyer{
+
+				position: absolute;
+				top: 8px;
+				left: 550px;
+			}
+			#div5{
+				width: 410px;
+				height: 200px;
+			}
+			#publish{
+				margin-top: 10px;
+				margin-left: 700px;
+			}
+			#table1{
+				margin-top: 100px;
+				margin-left: 100px;
+				
+			}
+			#table2{
+				margin-top: 10px;
+				margin-left: 220px;
+			}
+			.a{
+				text-decoration: none;
+				color: #808080;
+			}

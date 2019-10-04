@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="ssmCHp01.dao.RoleDao">
+<insert id="addRole"  parameterType="Role">
+INSERT INTO smbms_role (roleCode,roleName,createdBy,creationDate)
+VALUES(#{roleCode},#{roleName},#{createdBy},#{creationDate})
+</insert>
+<update id="updateRoleById" parameterType="Role">
+	UPDATE smbms_role set roleName=#{roleName},roleCode=#{roleCode} where id=#{id}
+</update>
+<delete id="delRoleById" parameterType="int">
+	DELETE from smbms_role where id=#{id}
+</delete>
+<select id="findAllRole" resultType="Role">
+	SELECT * from smbms_role
+</select>
+<!--  <select id="selectBlog" parameterType="int" resultType="Blog">
+ select * from Blog where id = #{id}
+ </select> -->
+</mapper>

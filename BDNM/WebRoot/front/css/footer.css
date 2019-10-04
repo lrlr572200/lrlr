@@ -1,0 +1,7 @@
+/*Î²²¿*/
+			footer{width: 1212px;margin: 0 auto;background-color: #F2F2F2;padding-top: 30px;}
+			#tf td{width: 303px;line-height: 38px;}
+			#tf td[colspan]{text-align: center;height: 50px;padding-top: 40px;}
+			#tf tr~tr{color: #666666;}
+			footer a:link{color: #666666;text-decoration: none}
+			footer a:hover{color: #C9A156;}

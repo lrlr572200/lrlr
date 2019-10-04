@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>BDNM</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  
+    <context-param>
+  		<param-name>CharCode</param-name>
+  		<param-value>UTF-8</param-value>
+  </context-param>
+  
+  <filter>
+  <filter-name>CodeFilter</filter-name>
+  <filter-class>com.BDNM.filter.CodeFilter</filter-class>
+  </filter>
+  
+  <filter-mapping>
+  <filter-name>CodeFilter</filter-name>
+  <url-pattern>/*</url-pattern>
+  </filter-mapping>
+  <!--配置  -->
+  <servlet>
+    <servlet-name>UserServlet</servlet-name>
+    <servlet-class>com.BDNM.web.UserServlet</servlet-class>
+  </servlet>
+
+<servlet>
+<servlet-name>OrderServlet</servlet-name>
+<servlet-class>com.BDNM.web.OrderServlet</servlet-class>
+</servlet>
+
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>OrderDetailsServlet</servlet-name>
+    <servlet-class>com.BDNM.web.OrderDetailsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RoomTypeServlet</servlet-name>
+    <servlet-class>com.BDNM.web.RoomTypeServlet</servlet-class>
+  </servlet>
+<servlet>
+    <servlet-name>HotelDetailsServlet</servlet-name>
+    <servlet-class>com.BDNM.web.HotelDetailsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AddressServlet</servlet-name>
+    <servlet-class>com.BDNM.web.AddressServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>HotelRoomServlet</servlet-name>
+    <servlet-class>com.BDNM.web.HotelRoomServlet</servlet-class>
+  </servlet>
+<servlet>
+    <servlet-name>HotelTypeServlet</servlet-name>
+    <servlet-class>com.BDNM.web.HotelTypeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CommenServlet</servlet-name>
+    <servlet-class>com.BDNM.web.CommenServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CouponServlet</servlet-name>
+    <servlet-class>com.BDNM.web.CouponServlet</servlet-class>
+  </servlet>
+
+
+
+<servlet-mapping>
+<servlet-name>OrderServlet</servlet-name>
+<url-pattern>/OrderServlet</url-pattern>
+</servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserServlet</servlet-name>
+    <url-pattern>/UserServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>OrderDetailsServlet</servlet-name>
+    <url-pattern>/OrderDetailsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RoomTypeServlet</servlet-name>
+    <url-pattern>/RoomTypeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>HotelDetailsServlet</servlet-name>
+    <url-pattern>/HotelDetailsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddressServlet</servlet-name>
+    <url-pattern>/AddressServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>HotelRoomServlet</servlet-name>
+    <url-pattern>/HotelRoomServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>HotelTypeServlet</servlet-name>
+    <url-pattern>/HotelTypeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CommenServlet</servlet-name>
+    <url-pattern>/CommenServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CouponServlet</servlet-name>
+    <url-pattern>/CouponServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+</web-app>

@@ -1,0 +1,28 @@
+#div1{
+		margin-top: 30px;
+		margin-right: 5px;
+			width: 1260px;
+			height: 526px;
+			border: 1px solid #99FFFF;
+			background-image: url(../../img/updateHotel/20080420ba6f1b3324576143d62brfIPM291T4da.jpg);
+		}
+		#div2{
+		margin-left: 950px;
+		margin-top: 50px;
+		
+		}
+		#div3{
+			margin-top: 20px;
+			margin-left: 330px;
+			margin-bottom: 100px;
+
+		}
+		#size{
+			font-size: 40px;
+			color: mediumvioletred;
+
+		}
+		.size{
+		font-size:25px;
+		color: darkcyan;
+		}

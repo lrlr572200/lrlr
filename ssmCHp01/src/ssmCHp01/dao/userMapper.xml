@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--  namespace 任意一个倒置的域名，保证mapper文件唯一（直接执行sql方式） -->
+<!--  namespace 基于接口的编程，必须是dao接口全名称 -->
+<mapper namespace="ssmCHp01.dao.UserDao">
+	<!-- id保证每种sql操作的唯一  基于接口必须是方法名 -->
+	<select id="findUserCount"  resultType="int">
+		select count(0) from smbms_user
+	</select>
+	<select id="findUserByID" parameterType="int" resultType="User"> <!-- 此处是类全名称，除非配置包名 -->
+		select * from smbms_user where id=#{userID}
+	</select>
+	<insert id="insertUser" parameterType="User">
+		INSERT INTO smbms_user(userCode,userName,userPassword,gender) VALUES(#{userCode},#{userName},#{userPassword},#{gender})
+	</insert>
+	<!-- <select id="findUserCount" parameterType="int" resultType="Blog">
+		select * from Blog where id = #{id}
+	</select> -->
+</mapper>

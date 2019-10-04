@@ -1,0 +1,462 @@
+﻿/*  清除全部内外边框     */
+*{margin: 0px;padding: 0px;cursor: default;}
+/*  整体网页盒子的样式设计    */
+body>div{
+	
+	idth: 1212px;
+	margin: 0px auto;
+	}
+/*  个人中心主体部分section样式设计    */
+#personal-center-section{
+	width: 980px;
+	margin: 20px auto 50px auto;
+	}
+/*个人中心主体部分——上部*/
+#perCen-secTop{
+	width: 100%;
+	height: 48px ;
+	position: relative;
+	background-color: #FAFAFA;
+	z-index: 1;			
+	}
+/*上部---左边*/
+#perCen-secTop-left{
+	height: 100%;
+	position: absolute;
+	left: 20px;
+				
+	}
+/*上部---左边--span样式CSS 和  上部---右边--span*/
+#perCen-secTop-left>span,#perCen-secTop-right>span{
+	display: inline-block;
+	height: 100%;
+	line-height: 48px;
+	text-align: center;
+	
+				
+	}
+/*上部---左边--用户名span*/
+#perCen-secTop-left>span:nth-of-type(2){
+	color: #FF658C;
+	font-family: "楷体";
+	font-weight:bold ;
+	font-size: 20px;
+	}
+/*上部---左边--用户ID号span*/
+#perCen-secTop-left>span:nth-of-type(3){
+	font-weight:bold ;
+	font-size: 12px;
+	margin-left: -5px;
+	margin-right: 5px;
+	}
+/*上部---左边--退出*/
+#quit{
+	color: blue;
+	font-family: "微软雅黑";
+	font-size: 15px;
+	cursor: pointer;
+	}
+/*上部---右边*/
+#perCen-secTop-right{
+	height: 100%;
+	position: absolute;
+	right: 20px;
+	}
+/*上部---右边--人民币符号和金额的span标签*/
+#perCen-secTop-right>.balance,#perCen-secTop-right>.RMB{
+	color: #FBA952;
+	font-family: "微软雅黑";
+	font-size: 20px;
+	font-weight: bold;
+	}
+/*上部---右边--中间分隔符的span标签*/
+#perCen-secTop-right>span:nth-of-type(4){
+	font-size: 25px;
+	color: gainsboro;
+	}
+/*个人中心主体部分——下部*/
+#perCen-secBottom{
+	width: 100%;
+	clear: both;
+	overflow: hidden;
+	margin-top: 20px;
+	position: relative;
+				
+	}
+/*下部---左边部分*/
+#perCen-secBot-left{
+	width: 160px;
+	float: left;
+	position: relative;
+	}
+/*下部---左边部分   div*/
+#perCen-secBot-left>#list1,#perCen-secBot-left>#list2{
+	width: 100%;
+	margin-bottom: 10px;
+	background-color: #FAFAFA;
+	position: relative;
+	}
+/*下部---左边部分   菜单栏dl>dt */
+#perCen-secBot-left>#list1>dl>dt{
+	padding-top: 10px ;
+	padding-bottom:10px ;
+	padding-left: 20px;
+	font-size: 15px;
+	cursor: pointer;
+	}
+/*下部---左边部分   菜单栏dl>dt 鼠标悬浮时 */
+#perCen-secBot-left>#list1>dl>dt:hover{
+	color: #FF658C;
+}
+/*下部---左边部分   菜单栏dl>dt 部分边框 */
+#perCen-secBot-left>#list1>dl>dt:nth-of-type(2){
+	border-top: 1px solid #F0F0F0;
+}
+#perCen-secBot-left>#list1>dl>dt:nth-of-type(3){
+	border-top: 1px solid #F0F0F0;
+	border-bottom: 1px solid #F0F0F0;
+}
+/*下部---左边部分   菜单栏dl>dt li  */
+#perCen-secBot-left>#list1>dl>dd ul li{
+	list-style: none;
+	line-height: 27px;
+	font-size: 13px;
+	cursor: pointer;
+	}
+#perCen-secBot-left>#list1>dl>dd ul li:last-of-type{
+	padding-bottom: 10px;
+}
+/*下部---左边部分   菜单栏dl>dt li 鼠标悬浮时 */
+#perCen-secBot-left>#list1>dl>dd ul li:hover{
+	color: white;
+	font-weight: bold;
+	background-color: #FF658C;
+}
+/*下部---左边部分   菜单栏dl>dt li 前置项目符号   */
+#perCen-secBot-left>#list1>dl>dd ul li>span{
+	padding-right: 10px;
+	padding-left: 20px;
+	font-weight: bolder;
+	font-size: 20px;
+	}
+/*下部---左边部分   文本栏div   */
+#perCen-secBot-left>#list2>p{
+	padding-bottom: 5px;
+	padding-left: 15px;
+}
+#perCen-secBot-left>#list2>p:first-of-type{
+	padding-top: 20px;
+	font-family: "楷体";
+	font-weight: bold;
+}
+#perCen-secBot-left>#list2>p:nth-of-type(2){
+	font-size: 20px;
+	font-weight: bolder;
+}
+#perCen-secBot-left>#list2>p:nth-of-type(3){
+	font-size: 13px;
+	padding-bottom: 15px;
+}
+#perCen-secBot-left>#list2>p:nth-of-type(3)+div{
+	height: 9px;
+	width: 100%;
+	background-image:url(../img/user_z_fe074f3.png) ;
+	background-repeat: no-repeat;
+	background-position-x: -227px;
+	background-position-y: -780px;
+	position: absolute;
+	bottom: -5px;
+}
+
+/*下部---右部分样式CSS*/
+#perCen-secBot-right{
+	width: 818px;
+	height: 100%;
+	float: left;
+	border: 1px solid #F0F0F0;
+	}
+/*下部---右部分--中间信息部分样式CSS*/
+#perCen-secBot-right-page{
+	width: 750px;
+	height: 600px;
+	margin: 0px auto;
+	}
+#perCen-secBot-right-page>#group-buy{
+	width: 100%;
+	height: 100%;
+}
+#perCen-secBot-right-page>#group-buy>iframe:first-of-type{
+	border: medium none;
+}
+#perCen-secBot-right-page>#group-buy>iframe:last-of-type{
+	border: medium none;
+	display: none;
+}
+
+/*下部---右部分--中间信息部分  暂未开通页面内容 样式*/
+#perCen-secBot-right-page>#not-open{
+	width: 100%;
+	height: 100%;
+	background-image: url(../img/no_order_3f875a1.png);
+	background-repeat: no-repeat;
+	background-position-x: 260px;
+	background-position-y: 80px;
+	position: relative;
+	display: none;
+}
+#perCen-secBot-right-page>#not-open>p{
+	font-family: "黑体";
+	font-size: 20px;
+	font-weight: bolder;
+	color: gray;
+	position: absolute;
+	bottom: 100px;
+	left: 230px;
+	
+}
+
+#price{
+	border-bottom:none;
+	border-left:none;
+	border-right:none;
+	border-top:none;
+	width: 740px;
+	height: 400px;
+	}
+
+.payment{
+	width: 28px;
+	margin:0px auto 10px auto ;
+	font-weight: bold;
+	color: white;
+	background-color: #FF658C;
+	border-radius: 10px 10px 10px;
+	padding: 5px 10px;
+}
+.delment{
+	width: 30px;
+	padding: 5px 10px;
+	border-radius: 10px 10px 10px;
+	background-color: #FAFAFA;
+}
+
+/*——————————————————————————————————————iframe样式——————————————————————————*/
+/*  清除全部内外边框     */
+*{margin: 0px;padding: 0px;cursor: default;}
+/*整体样式*/
+#groupBuy-Page,#details{
+	width: 747px;
+}
+               /* --订单信息数据页--*/
+/*团购订单部分   上侧导航栏样式*/
+#groupBuy-Page>p{
+	border-bottom: 1px solid #F0F0F0 ;
+	height: 50px;
+	line-height: 50px;
+	padding-left: 20px;
+	
+}
+/*团购订单部分   上侧导航栏内字块样式*/
+#groupBuy-Page>p>span{
+	border-radius: 13px;
+	margin-right: 45px;
+	padding: 5px 6px;
+	font-family: "楷体";
+	font-weight: bold;
+}
+#groupBuy-Page>p>span:hover{
+	background-color: #FF658C;
+	color: white;
+	font-weight: bolder;
+	cursor: pointer;
+}
+/*团购订单部分   下侧订单内容 样式*/
+#groupBuy-Page>#info-0{
+	width: 100%;
+	text-align: center;
+	vertical-align: bottom;
+	clear: both;
+}
+#navBuy {
+	 width:100%;
+	 background-color: #FAFAFA;
+}
+#navBuy~tr td{
+	font-size: 13px;
+	border-bottom: 1px solid #F0F0F0;
+}
+#groupBuy-Page>#info-0>table #navBuy~tr  td:nth-of-type(1)>div:first-of-type{
+	float: left;
+	margin: 10px 7px 10px 20px;
+}
+#groupBuy-Page>#info-0>table #navBuy~tr  td:nth-of-type(1)>div:last-of-type{
+	float: left;
+	margin: 10px 0px;
+	font-size: 12px;
+	overflow: hidden;
+}
+#groupBuy-Page>#info-0>table #navBuy~tr  td:nth-of-type(1)>div img{
+	height: 56px;
+	width: 84px;
+	vertical-align: bottom;
+}
+#info-0>table #navBuy~tr  td:nth-of-type(1)>div:last-of-type>p{
+	width: 142px;
+	text-align: left;
+	vertical-align: top;
+	text-overflow:ellipsis ;
+	overflow: hidden;
+}
+
+#info-0>table #navBuy~tr  td:nth-of-type(1)>div:last-of-type>p:first-of-type{
+	white-space:nowrap;
+	font-weight: bold;
+	font-family: "微软雅黑";
+}
+#info-0>table #navBuy~tr  td:nth-of-type(1)>div:last-of-type>p:last-of-type{
+	white-space:pre-line;
+	margin-top: 5px;
+	color: #999999;
+	overflow: hidden;
+}
+#info-0>table #navBuy~tr  td:nth-of-type(4){
+	border-left: 1px solid #F0F0F0;
+}
+#info-0>table #navBuy~tr  td:nth-of-type(5)>p:first-of-type{
+	font-size: 12px;
+	margin-bottom: 5px;
+}
+#info-0>table #navBuy~tr  td:nth-of-type(5)>p:last-of-type{
+	color: blue;
+	font-size: 12px;
+	cursor: pointer;
+}
+#ainfo-0>table #navBuy~tr  td:nth-of-type(6)>span{
+	color: blue;
+	cursor: pointer;
+}
+#info-outNav{
+	color:red;
+	text-align: center;
+	vertical-align: middle;
+}
+
+
+                /*--订单详情页--*/
+#details>#detailNav{
+	clear: both;
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	border-bottom: 1px solid #DFDFDF;
+}
+#details>#detailNav>span:first-of-type{
+	height: 47px;
+	float: left;
+	font-family:"黑体" ;
+	font-size: 20px;
+	font-weight:bold ;
+	border-bottom: 3px solid #FF658E;
+}
+#details>#detailNav>span:last-of-type{
+	float: right;
+	margin-right: 20px;
+	color: #0000FF;
+}
+#details>#status-bar{
+	clear: both;
+	width: 747px;
+	height: 50px;
+	line-height: 50px;
+	background-color: #FAFAFA;
+	border-bottom: 2px solid #F2F2F2;
+	border-left:  2px solid #F2F2F2;
+	border-right:  2px solid #F2F2F2;
+}
+#details>#status-bar>div:first-of-type{
+	float: left;
+	margin-left: 20px;
+}
+#details>#status-bar>div:last-of-type{
+	float: right;
+	margin-right: 20px;
+	color: #0000FF;
+}
+#details>#status-bar>div:first-of-type>span:first-of-type{
+	font-family: "微软雅黑";
+	font-size: 18px;
+}
+#details>#status-bar>div:first-of-type>span:last-of-type{
+	font-family: "微软雅黑";
+	font-size: 20px;
+	color: #FF48A0;
+}
+#details>#status-bar+p,#details>#detailInfo-2{
+	height: 35px;
+	line-height: 35px;
+	width: 100%;
+	font-size: 20px;
+	border-bottom:1px solid #FAFAFA ;
+	margin-top: 30px;
+	padding-left: 10px;
+}
+#details>#detailInfo-1{
+	width: 740px;
+	vertical-align: bottom;
+	height: 40px;
+	line-height: 40px;
+	margin: 5px 0px 0px 10px;
+}
+#details>#detailInfo-1+p{
+	color: #FF48A0;
+	margin-left: 10px;
+}
+#details>#detailInfo-3{
+	text-align: center;
+	vertical-align: bottom;
+	width: 100%;
+	padding-bottom: 20px;
+}
+#details>#detailInfo-3 tr td{
+	height: 50px;
+	line-height: 50px;
+	border-bottom: 2px solid #F6F6F6;
+}
+#info3-top{
+	background-color: #F6F6F6;
+}
+#info3-top+tr>td:last-of-type{
+	color: #FD8F52 ;
+}
+#details>#detailInfo-3 tr td:first-of-type{
+	border-left: 2px solid #F6F6F6;
+}
+#details>#detailInfo-3 tr td:last-of-type{
+	border-right: 2px solid #F6F6F6;
+}
+#info3-bot>td{
+	text-align: right;
+	padding-right: 20px;
+}
+#info3-bot span{
+	color: #FD8F52;
+	font-size: 23px;
+}
+/*——————————————————————————————————————jquery事件样式——————————————————————————*/
+
+/*jquery中  左侧导航栏点击变色事件  */
+.menuList0{
+	color: white;
+	font-weight: bold;
+	background-color: #FF658C;
+}
+.menu0{
+	color: #FF658C;
+}
+/*内联框架部分上部导航栏  点击变色事件*/
+.nav0{
+	background-color: #FF658C;
+	color: white;
+	font-weight: bolder;
+	cursor: pointer;
+}

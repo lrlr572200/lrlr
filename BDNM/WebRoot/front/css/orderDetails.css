@@ -1,0 +1,104 @@
+a{
+	color: #73B2D7;
+	text-decoration: none;
+}
+#buyA{
+	position: absolute;
+	right: 20px;
+	top: 30px;
+	font-size: 13px;
+}
+a:hover{
+	text-decoration: underline;
+}
+#headerBuy hr{
+	width: 75px;
+	border: 2px solid #FF658E;
+	text-align: left;
+	position: relative;
+	top: 8px;
+}
+#buyMain1{
+	text-indent: 15px;
+	color: #747674;
+	border: 1px solid #DFDFDF;
+	background-color: #FAFAFA;
+}
+#buyMain1>p span{
+	color: #FE6A83;
+	font-size: 18px;
+}
+#buyMain1 img{
+	vertical-align: middle;
+}
+#buyMain1 p:last-child{
+	line-height: 5px;
+	font-size: 13px;
+}
+#buyMain2{
+	margin-top: 35px;
+}
+#buyMain2 hr{
+	position: relative;
+	top: -8px;
+	border:1px solid #DFDFDF;
+}
+#buyMain2 table{
+	width: 100%;
+	height: 70px;
+	color: #747674;
+	font-size: 14px;	
+}
+#buyMain2 tr td:first-child{
+	text-indent: 5px;
+}
+#buyMain3 table{
+	
+	color: #666666;
+	font-size: 14px;
+	position: relative;
+	border: 1px solid #F2F2F2;
+	top: -9px;
+	width: 100%;
+	height: 40px;
+}
+#buyMain3 tr td:first-child{
+	width: 340px;
+}
+#buyMain3 tr td:last-child{
+	width: 190px;
+}
+#buyMain3 #table1{
+	text-align: center;
+	background-color: #F6F6F6;
+	border-bottom: none;
+}
+#buyMain3 #table2{
+	text-align: center;
+	border-top: none;
+	border-bottom: none;
+}
+#table2 td:nth-child(2){
+	text-indent: -16px;
+}
+#table2 td:last-child{
+	color: #FD8F52;
+}
+#table3{
+	text-align: right;
+	padding-right: 20px;
+}
+#table3 td span{
+	color: #FD8F52;
+	font-size: 16px;
+}
+#footerBuy hr{
+	position: relative;
+	top: -8px;
+	border:1px solid #DFDFDF;
+}
+#footerBuy p:last-child{
+	color: #666666;
+	font-size: 14px;
+	line-height: 0px;
+}

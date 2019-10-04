@@ -1,0 +1,102 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+#up{
+	width:900px;
+	height:80px;
+	margin:0px auto;
+	
+}
+#up>table{
+	margin-top:30px;
+}
+#middle{
+	width:100%;
+	height:500px;
+	background-color:#F5FBFD;
+	position:relative;
+}
+#left{
+	position:absolute;
+	top:100px;
+	left:200px;
+}
+#right{
+	padding-top: 20px;
+	padding-bottom: 15px;
+	background-color: white;
+	position:absolute;
+	top: 50px;
+	right: 150px;
+}
+#imga{
+	
+	background-image: url(../img/denglu/jietu26.png);
+	background-repeat: no-repeat;
+	background-position-x: 185px;
+	background-position-y: 15px;
+	text-align: right;
+}
+
+#imga>span>a{
+	text-decoration: none;
+	color: #000000;
+	margin-right: 20px;
+}
+#imgb{
+	background-image: url(../img/denglu/jietu29.png);
+	background-repeat: no-repeat;
+	background-position-x: 15px;
+	background-position-y: 20px;
+	background-size: 25px;
+}
+#imgb>div,#imgc>div{
+	border: 1px solid gainsboro;
+	width: 270px;
+	margin: 0px auto;
+}
+#imgb>div>input,#imgc>div>input{
+	height: 35px;
+	width: 235px;
+	margin-left: 30px;
+	border: none;
+}
+#imgc{
+	background-image: url(../img/denglu/jietu30.png);
+	background-repeat: no-repeat;
+	background-position-x: 15px;
+	background-position-y: 20px;
+	background-size: 25px;
+}
+#macc>div:nth-of-type(1){
+	font-size: 13px;
+	float: left;
+	margin-left: 20px;
+}
+#macc>div:nth-of-type(2){
+	float: right;
+	margin-right: 20px;
+}
+#macc>div:nth-of-type(2)>a{
+	text-decoration: none;
+}
+#down {
+	width: 100%;
+	position: relative;
+}
+#down a {
+	text-decoration: none;
+}		
+#table1 {
+	margin: 10px auto;
+}
+#table2{
+	margin: 10px auto;
+}
+.a3 {
+	color: #808080;
+}
+.a3:hover {
+	text-decoration: underline;
+}

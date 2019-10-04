@@ -1,0 +1,13 @@
+*{margin: 0 auto;}
+#header{width: 90%; height: 45px;padding-top: 12px;}
+#header strong{font-size: 19px;position: absolute;top: 20px;}
+#header a{position: absolute;right: 90px;top: 20px;}
+#main{width: 90%;height:630px; margin: 0 auto;}
+#d1{height: 100px;line-height: 100px;font-size: 30px;text-align: center;}
+#d2{width: 150px;height:500px;padding-top: 30px; display: inline-block;float: left; background-color: #F0F0F0;}
+#d2 li{height: 30px;}
+#d2 ul li{list-style-type: none;}
+a:link{text-decoration: none;color: black;}
+#d3{width: 880px;height: 530px;display: inline-block;float: right;}
+iframe{border-style: none;}
+#footer{ width: 90%; margin: 0px auto;padding-top: 20px;}

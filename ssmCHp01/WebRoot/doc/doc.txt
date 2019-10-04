@@ -1,0 +1,16 @@
+mybatis使用步骤
+ 1.	导入Jar包：
+ 		mybatis核心包，日志包，数据库驱动包
+ 2.	编写mybatis核心配置文件->mybatis_config.xml(放在resources[自己创建]文件包中)
+ 3.创建实体类
+ 4.创建dao层 及 mapper配置文件-->表名+mapper.xml(跟dao接口同目录)
+ 5.执行功能(API)
+ 		>1.读取加载配置文件
+ 		>2.创建工厂
+ 		>3.创建会话
+ 		>4.使用会话进行数据操作
+ 				Resources				：读取加载配置文件
+ 				SqlSessionBuilder	：创建工厂
+ 				SqlSessionFactory	：创建会话
+ 				SqlSession				：数据操作
+ 		

@@ -1,0 +1,75 @@
+	*{margin: 0;}
+	/*ÕýÎÄ*/
+			section{width: 1212px;margin: 0 auto;}
+			section #s1 #left{width: 250px;height: 410px; background-color: #313131;
+			display: inline-block;}
+			section #s1 #right{float: right;margin-right: 5px;margin-top: 5px;}
+			section #s1 #left #t3{line-height: 49.2px;}
+			section #s1 #left #t3 .left{color:white; width: 80px;padding-left: 20px;}
+			section #s1 #left #t3 .right{color: lightgrey;font-size: 12px;width: 150px;
+										text-align: right;padding-right: 20px;}
+			section #s1 #left #t3 td{cursor: pointer;}
+			section #s1 #left a:link{color: #666666;text-decoration: none}
+			section #s1 #left a:hover{color: #C9A156;}	
+			section #s1 #left #t3 tr:hover{background-color: #EBEBEB;}	
+			
+			section #s1 #right #t4{}					
+			section #s1 #right #t4 iframe{width: 690px; height: 400px;border-style: none none none none;}
+			section #s1 #right #t4 #t41 #t412{}
+			
+			section #s2{width: 1212px;clear: both;margin-top: 40px;}
+			section #s2 td{width: 606px;}
+			section #s2 #t511{font-size: 25px;}
+			section #s2 #t512{text-align: right;font-size: 15px;}
+			section #s2 #t512 span{margin-right: 10px;margin-left: 10px;}
+			section #s2 #t512 span:nth-of-type(3){margin-right: 30px;}
+			section #s2 #t512 a:link{text-decoration: none;color: black;}
+			section #s2 #t512 a:hover{color: #C89F55;}
+			
+
+			section #s2 .film{display: inline-block;width: 188px;margin-left: 0;margin-right: 0;
+								padding-left: 5px;padding-right: 5px;padding-top: 5px;padding-bottom: 5px;
+								text-align: center;font-size: 18px;}
+			section #s2 .film .c1{vertical-align: middle;margin-left: 5px;margin-right: 5px;margin-top: 5px;
+									margin-bottom: 20px;}
+			section #s2 .film .c2{/*margin-top: 10px;margin-bottom: 20px;*/opacity: 0.5;margin: 0px;}
+			section #s2 .film div{margin: 0 auto;width: 122px;height: 38px;margin-top: 10px;margin-bottom: 20px;}
+			section #s2 .film:hover div{background-color: peachpuff;}						
+			section #s2 .film:hover{box-shadow: darkgray 0px 0px 1px 0px;}
+			section #s2 hr{border-style: solid none none none;}	
+			section #s2 a:link{text-decoration: none;color: black;}
+			/*section #s2 a:hover .c2{background-color: black;}*/
+			
+			section #s3{width: 1212px;clear: both;margin-top: 40px;}
+			section #s3 td{width: 606px;}
+			section #s3 #t611{font-size: 25px;}
+			section #s3 #t612{text-align: right;font-size: 15px;}
+			section #s3 #t612 span{margin-right: 10px;margin-left: 10px;}
+			section #s3 #t612 span:nth-of-type(4){margin-right: 30px;}
+			section #s3 #t612 a:link{text-decoration: none;color: black;}
+			section #s3 #t612 a:hover{color: #C89F55;}	
+			
+			section #s3 a:link{text-decoration: none;}
+			section #s3 .xiuxian{display: inline-block;width: 228px;/*background-color: yellow;*/margin-left: 0;
+								margin-right: 0;font-size: 15px;color: gray;
+								padding-left: 5px;padding-right: 5px;padding-top: 5px;padding-bottom: 5px;
+								/*text-align: center;font-size: 18px;*/}
+			section #s3 .xiuxian .c1{vertical-align: middle;margin-left: 5px;margin-right: 5px;margin-top: 5px;
+									margin-bottom: 5px;}
+			section #s3 .xiuxian:hover{box-shadow: darkgray 0px 0px 1px 0px;}
+			section #s3 .xiuxian p{margin-top: 5px;margin-bottom: 5px;}
+			section #s3 .xiuxian .p1{font-size: 18px;color: black;margin-top: 20px;}	
+			section #s3 .xiuxian .p4{margin-bottom: 20px;}	
+			section #s3 .xiuxian .d2{width: 80px;float: right;text-align: right;}
+			section #s3 hr{border-style: solid none none none;}		
+			
+			section #s4 #t7{border-style: none none solid none;margin-top: 90px;cursor: pointer;}
+			section #s4 #t8{border: 1px solid lightgrey;border-style: solid none none none;
+							margin-bottom: 90px;}
+			section #s4 #t8 td{height: 40px;font-size: 15px;color: gray;vertical-align: bottom;}
+			section #s4 #t8 .L1{width: 235px;}
+			section #s4 #t8 .L2{width: 232px;}
+			section #s4 #t8 .L3{width: 232px;}
+			section #s4 #t8 .L4{width: 232px;}
+			section #s4 #t8 a:link{color: gray;text-decoration: none;}
+			section #s4 #t8 a:hover{color: #C89F55;}

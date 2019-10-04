@@ -1,0 +1,21 @@
+#main{
+	border: 1px solid blue;
+	width: 85%;
+	margin: 0px auto;
+	padding-top: 10px;
+	/*padding-left: 40px;
+	padding-right: 40px;*/
+	line-height: 40px;
+	font-size: 18px;
+	background-position: left ;
+	background-color: #F5FBFD;
+	background-image: url(../img/addHotelDetails/jietu24.png);
+	background-position-x: 40px;
+	background-repeat: no-repeat;
+}
+#main form{
+	/*margin-left: 600px;*/
+	width: 440px;
+}
+#main input{font-size: 18px;}
+#main input[type='submit']{margin-left: 130px;margin-top: 10px;margin-bottom: 20px;}
