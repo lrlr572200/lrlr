@@ -15,16 +15,16 @@ import ssmCHp01.entity.User;
 
 
 public class TextMybatis {
-	//实例化日志对象
+	//实锟斤拷锟斤拷志锟斤拷锟斤拷
 	Logger log=Logger.getLogger(TextMybatis.class);
 	UserDao userDao=new UserDaoImpl();
 	@Test
 		public void text1(){
 			
 			int count=userDao.findUserCount();
-			//System.out.println("用户数："+count);
-			log.info("用户数"+count);
-			log.debug("用户数"+count);
+			//System.out.println("锟矫伙拷锟斤拷"+count);
+			log.info("淇℃伅"+count);
+			log.debug("锟矫伙拷锟斤拷"+count);
 			
 		}
 	@Test
@@ -38,7 +38,7 @@ public class TextMybatis {
 	public void text3(){
 		Role role=new Role();
 		role.setRoleCode("SMBMS_AYWQ");
-		role.setRoleName("哎呀我去");
+		role.setRoleName("锟斤拷呀锟斤拷去");
 		role.setCreatedBy(1);
 		role.setCreationDate(new Date());
 		int rel=roleDao.addRole(role);
@@ -48,7 +48,7 @@ public class TextMybatis {
 	public void text4(){
 		Role role=new Role();
 		role.setRoleCode("SMBMS_LR");
-		role.setRoleName("董事长");
+		role.setRoleName("锟斤拷锟铰筹拷");
 		role.setId(4);
 		int rel=roleDao.updateRoleById(role);
 		System.out.println(rel);
