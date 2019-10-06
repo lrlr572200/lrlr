@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<!-- 加载数据源配置文件 -->
+	<properties resource="database.properties"></properties>
+	<settings>
+	<!-- 日志配置 -->
+		<setting name="logImpl" value="log4j" />
+		<!-- ORM映射配置 NONE（不能自动映射） PARTIAL（部分可以自动映射，没有内部嵌套时全部映射）
+		FULL（任何情况全自动映射）-->
+		<setting name="autoMappingBehavior" value="FULL"/>
+	</settings>
+	<!-- 给实体类配置别名 -->
+	<typeAliases>
+			<!-- <typeAlias type="ssmCHp01.entity.User"  alias="user"/> -->
+			<!-- 配置实体类包 -->
+			<package name="ssmCHp02.entity"/>
+	</typeAliases>
+	<environments default="development">
+		<environment id="development">
+			<transactionManager type="JDBC" />
+			<!-- 配置数据源 -->
+			<dataSource type="POOLED">
+				<property name="driver" value="${ssm.driver}" />
+				<property name="url" value="${ssm.url}" />
+				<property name="username" value="${ssm.userName}" />
+				<property name="password" value="${ssm.password}" />
+			</dataSource>
+		</environment>
+		<!-- <environment id="">
+		配置坏境
+		</environment> -->
+	</environments>
+	<mappers>
+		<mapper resource="ssmCHp02/dao/userMapper.xml" />
+	</mappers>
+</configuration>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--  namespace 任意一个倒置的域名，保证mapper文件唯一（直接执行sql方式） -->
+<!--  namespace 基于接口的编程，必须是dao接口全名称 -->
+<mapper namespace="ssmCHp02.dao.UserDao">
+	<!-- id保证每种sql操作的唯一  基于接口必须是方法名 -->
+	<!-- 2 模糊查询用户信息 -->
+	<select id="findUserByName" parameterType="String"  resultType="User">
+		select * from smbms_user where userName LIKE CONCAT('%',#{userName},'%')
+	</select>
+	
+	<!-- 3 根据用户名和角色查询用户，多个入参 -->
+	<select id="findUserByNameRole"    resultType="User">
+		select * from smbms_user where userName LIKE CONCAT('%',#{userName},'%')
+		and userRole=#{roleID};
+	</select>
+	
+	<!-- 4 根据用户名和角色查询用户，多个入参 参数封装为User实体 -->
+	<select id="findUserByNameRolePOJO"  parameterType="User"  resultType="User">
+		select * from smbms_user where userName LIKE CONCAT('%',#{userName},'%')
+		and userRole=#{userRole};
+	</select>
+	
+	<!-- 5 根据用户名和角色查询用户， 多个入参 参数封装为Map集合-->
+	<select id="findUserByNameRoleMap"  parameterType="Map"  resultType="User">
+		select * from smbms_user where userName LIKE CONCAT('%',#{name},'%')
+		and userRole=#{role};
+	</select>
+	
+	<!-- 不能自动映射的结果，自定义映射结果 -->
+	<resultMap type="User" id="userMap">
+		<!-- 主键字段映射 -->
+		<id property="id" column="id"/>
+		<!-- 非主键字段映射映射 -->
+		<result property="userCode" column="userCode"/>
+		<result property="userRoleName" column="roleName"/>
+	</resultMap>
+	<!-- 6.获取所有用户，结果中有角色名称，用户连接查询 
+			使用resultMap标记自定义映射，使用 resultMap属性引用映射  -->
+	<select id="findAllUser_RoleName"  resultMap="userMap">
+		select u.*,r.roleName from smbms_user u join smbms_role r on u.userRole=r.id 
+	</select>
+	
+	<!-- 包含JavaBean类型属性的实体映射 -->
+	<resultMap type="User" id="UserRoleMap">
+		<!-- 主键字段映射 -->
+		<id property="id" column="id"/>
+		<!-- 非主键字段映射映射 -->
+		<result property="userCode" column="userCode"/>
+		<!-- javaBean类型属性映射 -->
+			<association property="role" javaType="Role" >
+				<id property="id" column="rid"/>
+				<result property="roleCode" column="roleCode"/>
+				<result property="roleName" column="roleName"/>
+			</association>
+	</resultMap>
+	<!-- 7.根据ID获取用户信息和角色信息，并将角色的信息封装为角色实体
+			使用resultMap标记自定义映射，使用 resultMap属性引用映射  -->
+	<select id="findUserByID_user_role"  parameterType="int"  resultMap="UserRoleMap">
+		select u.*,r.roleName,r.id as rid,r.roleCode from smbms_user u join smbms_role r on u.userRole=r.id
+		where u.id=#{userID}; 
+	</select>
+	
+	<resultMap type="User" id="userAddressMap">
+			<collection property="addressList" ofType="Address"  resultMap="addressMap">
+			<!-- <id property="id" column="aid"/>
+			<result property="contact" column="contact"/>
+			<result property="addressDesc" column="addressDesc"/> -->
+			</collection>
+	</resultMap>
+	<resultMap type="Address" id="addressMap">
+			<id property="id" column="aid"/>
+			<result property="contact" column="contact"/>
+			<result property="addressDesc" column="addressDesc"/>
+	</resultMap>
+	<!-- 8.根据ID获取用户信息和地址信息  -->
+	<select id="findUserByID_user_Address" parameterType="int" resultMap="userAddressMap">
+		select u.*,a.id AS aid,a.addressDesc from smbms_user u join smbms_address a 
+		on a.userId=u.id where u.id=#{userID}
+	</select>
+	<!-- 9.添加用户 -->
+	<insert id="addUser" parameterType="User" useGeneratedKeys="true" keyProperty="id" keyColumn="id">
+		insert into smbms_user(userCode,userName,userPassword) VALUES
+		(#{userCode},#{userName},#{userPassword})
+	</insert>
+	<!-- <select id="findUserCount" parameterType="int" resultType="Blog">
+		select * from Blog where id = #{id}
+	</select> -->
+</mapper>
