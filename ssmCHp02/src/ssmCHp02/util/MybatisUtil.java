@@ -9,7 +9,7 @@ import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 
 public class MybatisUtil {
 		private static SqlSessionFactory fact=null;
-		 //¾²Ì¬´úÂë¿é
+		 //ï¿½ï¿½Ì¬ï¿½ï¿½ï¿½ï¿½ï¿½l
 		static {
 			InputStream is;
 			try {
